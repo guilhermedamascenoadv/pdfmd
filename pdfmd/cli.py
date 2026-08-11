@@ -63,51 +63,54 @@ def _make_colors(enable: bool) -> _Colors:
 
 def _build_parser() -> argparse.ArgumentParser:
     description = (
-        "Convert PDF files to clean, Obsidian-ready Markdown with table and "
-        "math-aware conversion.\n"
-        "Runs fully offline: no uploads, no telemetry, no cloud dependencies."
+        "Converte arquivos PDF em Markdown limpo, pronto para o Obsidian, com "
+        "conversão sensível a tabelas e equações.\n"
+        "Roda totalmente offline: sem uploads, sem telemetria, sem dependências de nuvem."
     )
 
     epilog = r"""
-Examples:
+Exemplos:
 
-  # Basic conversion (writes input.md next to the PDF)
+  # Conversão básica (grava input.md ao lado do PDF)
   pdfmd report.pdf
 
-  # Choose an explicit output file
+  # Escolher um arquivo de saída explícito
   pdfmd report.pdf -o report_notes.md
 
-  # Auto-detect scanned pages and OCR as needed
+  # Detectar páginas digitalizadas automaticamente e aplicar OCR quando necessário
   pdfmd scan.pdf --ocr auto
 
-  # Force Tesseract OCR and export page images
+  # Forçar OCR via Tesseract e exportar imagens das páginas
   pdfmd book_scan.pdf --ocr tesseract --export-images
 
-  # Preview only (first few pages) with stats
+  # Apenas prévia (primeiras páginas) com estatísticas
   pdfmd long_paper.pdf --preview-only --stats
 
-  # Batch convert multiple PDFs into a folder
+  # Converter vários PDFs em lote para uma pasta
   pdfmd *.pdf --ocr auto -o out_md/
 
-  # Quiet mode, non-interactive (good for scripts)
+  # Modo silencioso, não interativo (bom para scripts)
   pdfmd confidential.pdf --ocr auto --no-progress --quiet
 
-Tables and math:
+Tabelas e equações:
 
-  • Text tables are detected and rendered as GitHub-flavoured Markdown tables.
-  • Common Unicode math, Greek letters, subscripts and superscripts are
-    normalised to LaTeX-style math so expressions like E = mc², x₁₀², α + β³
-    survive the round-trip as equations instead of broken text.
-  • LaTeX-like math already present in the PDF is preserved and not escaped
-    as normal Markdown text.
+  • Tabelas em texto são detectadas e renderizadas como tabelas Markdown
+    no formato GitHub.
+  • Notação matemática Unicode comum, letras gregas, subscritos e
+    sobrescritos são normalizados para equações em estilo LaTeX, para que
+    expressões como E = mc², x₁₀², α + β³ sobrevivam à conversão como
+    equações em vez de texto quebrado.
+  • Equações em estilo LaTeX já presentes no PDF são preservadas e não
+    são escapadas como texto Markdown comum.
 
-Security notes:
+Notas de segurança:
 
-  • All processing happens on your machine.
-  • Passwords are read interactively (no echo), never logged,
-    and never sent to other processes via command-line arguments.
-  • Output Markdown files are written unencrypted; protect them
-    according to your environment's security requirements.
+  • Todo o processamento acontece na sua máquina.
+  • Senhas são lidas de forma interativa (sem eco na tela), nunca são
+    registradas em log e nunca são enviadas a outros processos via
+    argumentos de linha de comando.
+  • Os arquivos Markdown de saída são gravados sem criptografia; proteja-os
+    de acordo com os requisitos de segurança do seu ambiente.
 """
 
     parser = argparse.ArgumentParser(
@@ -121,7 +124,7 @@ Security notes:
         "inputs",
         metavar="INPUT_PDF",
         nargs="*",  # CHANGED: '*' allows zero inputs (was '+')
-        help="Path(s) to input PDF file(s). You can pass multiple PDFs.",
+        help="Caminho(s) do(s) PDF(s) de entrada. Você pode passar vários PDFs.",
     )
 
     parser.add_argument(
@@ -129,8 +132,8 @@ Security notes:
         "--output",
         metavar="OUTPUT",
         help=(
-            "Output path. For a single input this is an .md file.\n"
-            "For multiple inputs this is treated as an output directory."
+            "Caminho de saída. Para uma única entrada, é um arquivo .md.\n"
+            "Para múltiplas entradas, é tratado como um diretório de saída."
         ),
     )
 
@@ -139,11 +142,11 @@ Security notes:
         choices=["off", "auto", "tesseract", "ocrmypdf"],
         default="off",
         help=(
-            "OCR mode (default: off):\n"
-            "  off        — use native text only\n"
-            "  auto       — detect scanned pages and OCR as needed\n"
-            "  tesseract  — force page-by-page Tesseract OCR\n"
-            "  ocrmypdf   — use OCRmyPDF for high-fidelity layout"
+            "Modo de OCR (padrão: off):\n"
+            "  off        — usa apenas o texto nativo\n"
+            "  auto       — detecta páginas digitalizadas e aplica OCR quando necessário\n"
+            "  tesseract  — força OCR via Tesseract em todas as páginas\n"
+            "  ocrmypdf   — usa o OCRmyPDF para layout de alta fidelidade"
         ),
     )
 
@@ -151,43 +154,43 @@ Security notes:
         "--lang",
         default="eng",
         help=(
-            "Tesseract language code(s) for OCR (default: eng).\n"
-            "Use a Tesseract language code, e.g. 'deu' for German,\n"
-            "'fra' for French, 'jpn' for Japanese.\n"
-            "Combine with '+' for multiple: 'eng+fra'.\n"
-            "Only used when --ocr is not 'off'."
+            "Código(s) de idioma do Tesseract para o OCR (padrão: eng).\n"
+            "Use um código de idioma do Tesseract, ex.: 'deu' para alemão,\n"
+            "'fra' para francês, 'jpn' para japonês.\n"
+            "Combine com '+' para vários: 'eng+fra'.\n"
+            "Usado apenas quando --ocr não é 'off'."
         ),
     )
 
     parser.add_argument(
         "--export-images",
         action="store_true",
-        help="Export images to an _assets/ folder and append Markdown references.",
+        help="Exporta as imagens para uma pasta _assets/ e adiciona as referências no Markdown.",
     )
 
     parser.add_argument(
         "--page-breaks",
         action="store_true",
-        help="Insert '---' page break markers between pages in the output.",
+        help="Insere marcadores de quebra de página '---' entre as páginas na saída.",
     )
 
     parser.add_argument(
         "--preview-only",
         action="store_true",
-        help="Only process the first few pages (useful for quick inspection).",
+        help="Processa apenas as primeiras páginas (útil para inspeção rápida).",
     )
 
     parser.add_argument(
         "--no-progress",
         action="store_true",
-        help="Disable the terminal progress bar.",
+        help="Desativa a barra de progresso no terminal.",
     )
 
     parser.add_argument(
         "-q",
         "--quiet",
         action="store_true",
-        help="Suppress non-error messages; only show errors.",
+        help="Suprime mensagens que não sejam de erro; mostra apenas erros.",
     )
 
     parser.add_argument(
@@ -195,28 +198,28 @@ Security notes:
         "--verbose",
         action="count",
         default=0,
-        help="Increase verbosity. Use -v for more logs, -vv for debug-level detail.",
+        help="Aumenta a verbosidade. Use -v para mais logs, -vv para detalhe de depuração.",
     )
 
     parser.add_argument(
         "--stats",
         action="store_true",
         help=(
-            "After conversion, print basic stats "
-            "(words, headings, tables, lists)."
+            "Após a conversão, imprime estatísticas básicas "
+            "(palavras, títulos, tabelas, listas)."
         ),
     )
 
     parser.add_argument(
         "--no-color",
         action="store_true",
-        help="Disable coloured output.",
+        help="Desativa a saída colorida.",
     )
 
     parser.add_argument(
         "--version",
         action="store_true",
-        help="Print version and exit.",
+        help="Imprime a versão e sai.",
     )
 
     return parser
@@ -267,13 +270,13 @@ def _make_progress_cb(
         pct = max(0, min(100, pct))
 
         elapsed = time.time() - start
-        eta_str = "ETA: --"
+        eta_str = "Tempo restante: --"
         if pct > 0 and elapsed > 0:
             remaining = elapsed * (100 - pct) / pct
             if remaining < 90:
-                eta_str = f"ETA: {int(remaining)}s"
+                eta_str = f"Tempo restante: {int(remaining)}s"
             else:
-                eta_str = f"ETA: {int(remaining // 60)}m"
+                eta_str = f"Tempo restante: {int(remaining // 60)}m"
 
         bar_width = 24
         filled = int(bar_width * pct / 100)
@@ -357,11 +360,11 @@ def _compute_stats(md_path: Path) -> ConversionStats:
 
 def _print_stats(path: Path, stats: ConversionStats, colors: _Colors) -> None:
     sys.stderr.write(
-        f"{colors.info}Stats for {path.name}:{colors.reset}\n"
-        f"  Words:     {stats.words}\n"
-        f"  Headings:  {stats.headings}\n"
-        f"  Tables:    {stats.tables}\n"
-        f"  Lists:     {stats.lists}\n"
+        f"{colors.info}Estatísticas de {path.name}:{colors.reset}\n"
+        f"  Palavras:  {stats.words}\n"
+        f"  Títulos:   {stats.headings}\n"
+        f"  Tabelas:   {stats.tables}\n"
+        f"  Listas:    {stats.lists}\n"
     )
     sys.stderr.flush()
 
@@ -385,13 +388,13 @@ def _run_single(
     if not inp.is_file():
         if not args.quiet:
             sys.stderr.write(
-                f"{colors.err}Error:{colors.reset} input file not found: {inp}\n"
+                f"{colors.err}Erro:{colors.reset} arquivo de entrada não encontrado: {inp}\n"
             )
         return False
 
     if not args.quiet:
         sys.stderr.write(
-            f"{colors.info}Converting{colors.reset} {inp} "
+            f"{colors.info}Convertendo{colors.reset} {inp} "
             f"→ {colors.ok}{outp}{colors.reset}\n"
         )
         sys.stderr.flush()
@@ -427,7 +430,13 @@ def _run_single(
     except Exception as exc:
         # Look for password / encryption related errors
         lower = str(exc).lower()
+        # Portuguese entries match pdfmd's own messages (extract.py); the
+        # English ones still catch errors raised by PyMuPDF itself.
         password_keywords = [
+            "senha necessária",
+            "senha do pdf incorreta",
+            "descriptografar",
+            "criptografado",
             "password required",
             "password is required",
             "incorrect pdf password",
@@ -439,7 +448,7 @@ def _run_single(
 
         if not needs_password:
             if not args.quiet:
-                sys.stderr.write(f"{colors.err}Error:{colors.reset} {exc}\n")
+                sys.stderr.write(f"{colors.err}Erro:{colors.reset} {exc}\n")
                 if args.verbose >= 2:
                     traceback.print_exc(file=sys.stderr)
             return False
@@ -448,26 +457,26 @@ def _run_single(
         if not sys.stdin.isatty():
             if not args.quiet:
                 sys.stderr.write(
-                    f"{colors.err}Error:{colors.reset} "
-                    "PDF is password protected and interactive input is not available.\n"
+                    f"{colors.err}Erro:{colors.reset} "
+                    "o PDF é protegido por senha e a entrada interativa não está disponível.\n"
                 )
             return False
 
         try:
             password = getpass.getpass(
-                "PDF is password protected. Enter password (input will be hidden): "
+                "O PDF é protegido por senha. Digite a senha (a entrada ficará oculta): "
             )
         except Exception as e_input:
             if not args.quiet:
                 sys.stderr.write(
-                    f"{colors.err}Error reading password:{colors.reset} {e_input}\n"
+                    f"{colors.err}Erro ao ler a senha:{colors.reset} {e_input}\n"
                 )
             return False
 
         if not password:
             if not args.quiet:
                 sys.stderr.write(
-                    f"{colors.warn}No password provided; skipping file.{colors.reset}\n"
+                    f"{colors.warn}Nenhuma senha informada; pulando o arquivo.{colors.reset}\n"
                 )
             return False
 
@@ -477,7 +486,7 @@ def _run_single(
         except Exception as exc2:
             if not args.quiet:
                 sys.stderr.write(
-                    f"{colors.err}Error after password attempt:{colors.reset} {exc2}\n"
+                    f"{colors.err}Erro após a tentativa com senha:{colors.reset} {exc2}\n"
                 )
                 if args.verbose >= 2:
                     traceback.print_exc(file=sys.stderr)
@@ -531,8 +540,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
 
     if multiple and out_arg is not None and out_arg.exists() and not out_arg.is_dir():
         sys.stderr.write(
-            f"{colors.err}Error:{colors.reset} when converting multiple inputs, "
-            f"--output must be a directory.\n"
+            f"{colors.err}Erro:{colors.reset} ao converter várias entradas, "
+            f"--output deve ser um diretório.\n"
         )
         return 1
 
@@ -541,7 +550,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             out_arg.mkdir(parents=True, exist_ok=True)
         except Exception as exc:
             sys.stderr.write(
-                f"{colors.err}Error creating output directory:{colors.reset} {exc}\n"
+                f"{colors.err}Erro ao criar o diretório de saída:{colors.reset} {exc}\n"
             )
             return 1
 
@@ -552,7 +561,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         if not inp.is_file():
             if not args.quiet:
                 sys.stderr.write(
-                    f"{colors.err}Error:{colors.reset} input file not found: {inp}\n"
+                    f"{colors.err}Erro:{colors.reset} arquivo de entrada não encontrado: {inp}\n"
                 )
             failures += 1
             continue
@@ -578,13 +587,13 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if not args.quiet:
         if failures == 0:
             sys.stderr.write(
-                f"{colors.ok}Done.{colors.reset} "
-                f"{successes} file(s) converted successfully.\n"
+                f"{colors.ok}Concluído.{colors.reset} "
+                f"{successes} arquivo(s) convertido(s) com sucesso.\n"
             )
         else:
             sys.stderr.write(
-                f"{colors.err}Finished with errors.{colors.reset} "
-                f"{successes} succeeded, {failures} failed.\n"
+                f"{colors.err}Finalizado com erros.{colors.reset} "
+                f"{successes} com sucesso, {failures} com falha.\n"
             )
         sys.stderr.flush()
 

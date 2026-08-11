@@ -75,7 +75,7 @@ def progress(done: int, total: int) -> None:
         pct = 0.0
     else:
         pct = (done / total) * 100.0
-    sys.stderr.write(f"[pdf_to_md] Progress: {done}/{total} ({pct:.1f}%)\r")
+    sys.stderr.write(f"[pdf_to_md] Progresso: {done}/{total} ({pct:.1f}%)\r")
     sys.stderr.flush()
     if done >= total:
         sys.stderr.write("\n")

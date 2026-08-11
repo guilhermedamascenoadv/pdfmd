@@ -97,7 +97,7 @@ def _export_images(
     
     if fitz is None:
         if log_cb:
-            log_cb("[pipeline] PyMuPDF is not available; cannot export images.")
+            log_cb("[pipeline] PyMuPDF não está disponível; não é possível exportar imagens.")
         return {}
 
     try:
@@ -105,7 +105,7 @@ def _export_images(
         doc = _open_pdf_with_password(pdf_path, pdf_password)
     except Exception as e:
         if log_cb:
-            log_cb(f"[pipeline] Could not export images: {e}")
+            log_cb(f"[pipeline] Não foi possível exportar imagens: {e}")
         return {}
 
     try:
@@ -128,7 +128,7 @@ def _export_images(
                     pix = fitz.Pixmap(doc, xref)
                 except Exception as exc:
                     if log_cb:
-                        log_cb(f"[pipeline] Skipping image xref={xref} on page {pno + 1}: {exc}")
+                        log_cb(f"[pipeline] Pulando imagem xref={xref} na página {pno + 1}: {exc}")
                     continue
                 
                 # Convert any non-RGB/Gray colorspace (CMYK, ICC, etc.) to RGB.
@@ -147,18 +147,18 @@ def _export_images(
                     pix.save(str(fname))
                 except Exception as exc:
                     if log_cb:
-                        log_cb(f"[pipeline] Could not save image p{pno + 1}-{idx}: {exc}")
+                        log_cb(f"[pipeline] Não foi possível salvar a imagem p{pno + 1}-{idx}: {exc}")
                     continue
-                
+
                 # Markdown wants forward slashes for portability
                 rel = assets_dir.name + "/" + fname.name
                 rels.append(rel)
-            
+
             if rels:
                 mapping[pno] = rels
-        
+
         if log_cb and mapping:
-            log_cb(f"[pipeline] Exported images to folder: {assets_dir}")
+            log_cb(f"[pipeline] Imagens exportadas para a pasta: {assets_dir}")
         
         return mapping
     
@@ -208,11 +208,11 @@ def pdf_to_markdown(
         log_cb = default_log
 
     if fitz is None:
-        raise RuntimeError("PyMuPDF (fitz) is not installed. Install with: pip install pymupdf")
+        raise RuntimeError("PyMuPDF (fitz) não está instalado. Instale com: pip install pymupdf")
 
     # --- Stage 1: Extract ---
     if log_cb:
-        log_cb("[pipeline] Extracting text…")
+        log_cb("[pipeline] Extraindo texto…")
 
     # Map page-level progress into the [0, 30] range of a 0 to 100 scale.
     def _stage1_progress(done_pages: int, total_pages: int) -> None:
@@ -228,30 +228,30 @@ def pdf_to_markdown(
     )
 
     if not pages:
-        raise ValueError("PDF extraction produced no pages")
+        raise ValueError("A extração do PDF não produziu páginas")
 
     if progress_cb:
         progress_cb(30, 100)
 
     # --- Stage 2: Transform ---
     if log_cb:
-        log_cb("[pipeline] Transforming pages…")
-    
+        log_cb("[pipeline] Transformando páginas…")
+
     pages_t, header, footer, body_sizes = transform_pages(
-        pages, 
+        pages,
         options,
         debug_tables=debug_tables,
     )
-    
+
     if log_cb and (header or footer):
-        log_cb(f"[pipeline] Removed repeating edges → header={header!r}, footer={footer!r}")
+        log_cb(f"[pipeline] Bordas repetidas removidas → header={header!r}, footer={footer!r}")
 
     if progress_cb:
         progress_cb(60, 100)
 
     # --- Stage 3: Render ---
     if log_cb:
-        log_cb("[pipeline] Rendering Markdown…")
+        log_cb("[pipeline] Renderizando Markdown…")
     
     md = render_document(
         pages_t,
@@ -265,7 +265,7 @@ def pdf_to_markdown(
     # --- Stage 4: Optional image export ---
     if options.export_images:
         if log_cb:
-            log_cb("[pipeline] Exporting images…")
+            log_cb("[pipeline] Exportando imagens…")
         
         page_to_rel = _export_images(
             input_pdf,
@@ -283,20 +283,20 @@ def pdf_to_markdown(
 
     # --- Write output ---
     if log_cb:
-        log_cb("[pipeline] Writing output file…")
-    
+        log_cb("[pipeline] Gravando arquivo de saída…")
+
     try:
         Path(output_md).write_text(md, encoding="utf-8")
     except Exception as e:
         if log_cb:
-            log_cb(f"[pipeline] Error writing output: {e}")
+            log_cb(f"[pipeline] Erro ao gravar a saída: {e}")
         raise
 
     if progress_cb:
         progress_cb(100, 100)
-    
+
     if log_cb:
-        log_cb(f"[pipeline] Saved → {output_md}")
+        log_cb(f"[pipeline] Salvo → {output_md}")
 
 
 __all__ = [

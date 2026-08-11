@@ -509,7 +509,7 @@ def _annotate_tables_on_page(page: PageText, debug: bool = False) -> PageText:
             if debug:
                 try:
                     from .utils import log
-                    log(f"[transform] Annotated block {idx} as table "
+                    log(f"[transform] Bloco {idx} anotado como tabela "
                         f"({det.detection_type}, {det.n_rows}x{det.n_cols}, "
                         f"score={det.score:.2f})")
                 except ImportError:

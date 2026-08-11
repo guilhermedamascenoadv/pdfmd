@@ -63,7 +63,7 @@ def _open_pdf_with_password(pdf_path: str, pdf_password: Optional[str]):
     * We avoid keeping the password around longer than needed.
     """
     if fitz is None:  # pragma: no cover - guarded earlier
-        raise RuntimeError("PyMuPDF (fitz) is not installed. Install with: pip install pymupdf")
+        raise RuntimeError("PyMuPDF (fitz) não está instalado. Instale com: pip install pymupdf")
 
     # Open the document first; PyMuPDF will tell us if a password is needed.
     try:
@@ -77,15 +77,19 @@ def _open_pdf_with_password(pdf_path: str, pdf_password: Optional[str]):
         if not pdf_password:
             doc.close()
             # Message is intentionally simple so other layers can pattern match.
-            raise RuntimeError("Password required to open this PDF.")
+            # NOTE: cli.py matches this text via substring to trigger the
+            # interactive password prompt; its keyword list carries both the
+            # Portuguese wording used here and the English wording emitted by
+            # PyMuPDF itself. Keep the two in sync.
+            raise RuntimeError("Senha necessária para abrir este PDF.")
         try:
             ok = bool(doc.authenticate(pdf_password))
         except Exception:
             doc.close()
-            raise RuntimeError("Incorrect PDF password or cannot decrypt.")
+            raise RuntimeError("Senha do PDF incorreta ou não foi possível descriptografar.")
         if not ok:
             doc.close()
-            raise RuntimeError("Incorrect PDF password or cannot decrypt.")
+            raise RuntimeError("Senha do PDF incorreta ou não foi possível descriptografar.")
 
     return doc
 
@@ -144,7 +148,7 @@ def extract_pages(
     progress_cb, if provided, is called as (done_pages, total_pages).
     """
     if fitz is None:
-        raise RuntimeError("PyMuPDF (fitz) is not installed. Install with: pip install pymupdf")
+        raise RuntimeError("PyMuPDF (fitz) não está instalado. Instale com: pip install pymupdf")
 
     mode = (options.ocr_mode or "off").lower()
 
@@ -153,18 +157,18 @@ def extract_pages(
 
     if mode == "auto":
         if _needs_ocr_probe(pdf_path, pdf_password):
-            log("[extract] Auto: scanned PDF detected.")
+            log("[extract] Automático: PDF digitalizado detectado.")
             if _HAS_TESS and _HAS_PIL and _tesseract_available():
-                log("[extract] Using Tesseract OCR...")
+                log("[extract] Usando OCR via Tesseract...")
                 return _extract_tesseract(pdf_path, options, progress_cb, pdf_password)
             elif _which("ocrmypdf") and _tesseract_available():
-                log("[extract] Using OCRmyPDF...")
+                log("[extract] Usando OCRmyPDF...")
                 return _extract_ocrmypdf_then_native(pdf_path, options, progress_cb, pdf_password)
             else:
-                log("[extract] WARNING: Scanned PDF detected but no OCR available!")
-                log("[extract] Install Tesseract from: https://github.com/UB-Mannheim/tesseract/wiki")
-                log("[extract] Then run: pip install pytesseract pillow")
-                log("[extract] Falling back to native extraction (may produce poor results).")
+                log("[extract] AVISO: PDF digitalizado detectado, mas nenhum OCR disponível!")
+                log("[extract] Instale o Tesseract em: https://github.com/UB-Mannheim/tesseract/wiki")
+                log("[extract] Em seguida, execute: pip install pytesseract pillow")
+                log("[extract] Voltando à extração nativa (pode produzir resultados ruins).")
                 return _extract_native(pdf_path, options, progress_cb, pdf_password)
         # Otherwise, native path
         return _extract_native(pdf_path, options, progress_cb, pdf_password)
@@ -172,31 +176,31 @@ def extract_pages(
     if mode == "tesseract":
         if not (_HAS_TESS and _HAS_PIL):
             raise RuntimeError(
-                "OCR mode 'tesseract' selected but pytesseract/Pillow are not available.\n"
-                "Install with: pip install pytesseract pillow\n"
-                "And install Tesseract from: https://github.com/UB-Mannheim/tesseract/wiki"
+                "Modo de OCR 'tesseract' selecionado, mas pytesseract/Pillow não estão disponíveis.\n"
+                "Instale com: pip install pytesseract pillow\n"
+                "E instale o Tesseract em: https://github.com/UB-Mannheim/tesseract/wiki"
             )
         if not _tesseract_available():
             raise RuntimeError(
-                "OCR mode 'tesseract' selected but Tesseract binary is not available on PATH.\n"
-                "Install Tesseract from: https://github.com/UB-Mannheim/tesseract/wiki"
+                "Modo de OCR 'tesseract' selecionado, mas o binário do Tesseract não está disponível no PATH.\n"
+                "Instale o Tesseract em: https://github.com/UB-Mannheim/tesseract/wiki"
             )
         return _extract_tesseract(pdf_path, options, progress_cb, pdf_password)
 
     if mode == "ocrmypdf":
         if not _tesseract_available():
             raise RuntimeError(
-                "OCR mode 'ocrmypdf' selected but Tesseract is not available on PATH.\n"
-                "Install Tesseract from: https://github.com/UB-Mannheim/tesseract/wiki"
+                "Modo de OCR 'ocrmypdf' selecionado, mas o Tesseract não está disponível no PATH.\n"
+                "Instale o Tesseract em: https://github.com/UB-Mannheim/tesseract/wiki"
             )
         if not _which("ocrmypdf"):
             raise RuntimeError(
-                "OCR mode 'ocrmypdf' selected but ocrmypdf is not installed.\n"
-                "Install with: pip install ocrmypdf"
+                "Modo de OCR 'ocrmypdf' selecionado, mas o ocrmypdf não está instalado.\n"
+                "Instale com: pip install ocrmypdf"
             )
         return _extract_ocrmypdf_then_native(pdf_path, options, progress_cb, pdf_password)
 
-    raise ValueError(f"Unknown ocr_mode: {mode!r}")
+    raise ValueError(f"Modo de OCR desconhecido: {mode!r}")
 
 
 # ------------------------ Native PyMuPDF extraction ----------------------
@@ -214,7 +218,7 @@ def _extract_native(
         total = doc.page_count
 
         if total == 0:
-            raise ValueError("PDF has no pages")
+            raise ValueError("O PDF não tem páginas")
 
         limit = total if not options.preview_only else min(3, total)
         out: List[PageText] = []
@@ -243,14 +247,14 @@ def _extract_tesseract(
 ) -> List[PageText]:
     """Render each page to an image, feed into Tesseract, build PageText."""
     if not (_HAS_TESS and _HAS_PIL):  # pragma: no cover - guarded earlier
-        raise RuntimeError("Tesseract/Pillow not available")
+        raise RuntimeError("Tesseract/Pillow não disponíveis")
 
     doc = _open_pdf_with_password(pdf_path, pdf_password)
     try:
         total = doc.page_count
 
         if total == 0:
-            raise ValueError("PDF has no pages")
+            raise ValueError("O PDF não tem páginas")
 
         limit = total if not options.preview_only else min(3, total)
         out: List[PageText] = []
@@ -264,7 +268,7 @@ def _extract_tesseract(
             # Render at higher DPI for better OCR
             pix = page.get_pixmap(dpi=dpi)
             if not hasattr(pix, "tobytes"):
-                raise RuntimeError("Unexpected: pixmap missing tobytes()")
+                raise RuntimeError("Inesperado: pixmap sem tobytes()")
 
             png_bytes = pix.tobytes("png")
             img = Image.open(io.BytesIO(png_bytes))
@@ -301,7 +305,7 @@ def _extract_ocrmypdf_then_native(
     """
     ocrmypdf_bin = _which("ocrmypdf")
     if not ocrmypdf_bin:
-        raise RuntimeError("ocrmypdf not found on PATH")
+        raise RuntimeError("ocrmypdf não encontrado no PATH")
 
     # Create a temporary directory to hold the OCR'ed PDF
     with tempfile.TemporaryDirectory(prefix="pdfmd_") as tmp:
@@ -316,7 +320,7 @@ def _extract_ocrmypdf_then_native(
         cmd = [ocrmypdf_bin, "--force-ocr", "-l", lang, input_for_ocr, out_pdf]
 
         try:
-            log("[extract] Running OCRmyPDF (this may take a while)...")
+            log("[extract] Executando o OCRmyPDF (isso pode demorar)...")
             # Set timeout to 10 minutes (600 seconds) to prevent hanging
             # Capture output for progress logging
             result = subprocess.run(
@@ -328,22 +332,22 @@ def _extract_ocrmypdf_then_native(
             )
             # Log summary (avoid spamming full output)
             if result.stdout:
-                log("[extract] ocrmypdf output (truncated):")
+                log("[extract] Saída do ocrmypdf (truncada):")
                 log("[extract] " + result.stdout.decode(errors="ignore").splitlines()[0])
             if result.stderr:
                 first_err_line = result.stderr.decode(errors="ignore").splitlines()[0]
-                log("[extract] ocrmypdf stderr (first line):")
+                log("[extract] stderr do ocrmypdf (primeira linha):")
                 log("[extract] " + first_err_line)
         except subprocess.TimeoutExpired:
-            log("[extract] ERROR: ocrmypdf timed out after 10 minutes.")
+            log("[extract] ERRO: o ocrmypdf expirou após 10 minutos.")
             raise
         except subprocess.CalledProcessError as e:
-            log(f"[extract] ERROR: ocrmypdf failed with return code {e.returncode}.")
+            log(f"[extract] ERRO: o ocrmypdf falhou com código de retorno {e.returncode}.")
             if e.stdout:
-                log("[extract] stdout (truncated):")
+                log("[extract] stdout (truncado):")
                 log("[extract] " + e.stdout.decode(errors="ignore").splitlines()[0])
             if e.stderr:
-                log("[extract] stderr (truncated):")
+                log("[extract] stderr (truncado):")
                 log("[extract] " + e.stderr.decode(errors="ignore").splitlines()[0])
             raise
 

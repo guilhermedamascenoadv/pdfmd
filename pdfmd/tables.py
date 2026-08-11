@@ -215,10 +215,10 @@ def detect_tables_on_page(page: PageText, debug: bool = False) -> List[TableDete
     if debug:
         try:
             from .utils import log
-            log(f"[tables] Page has {len(page.blocks)} blocks")
-            log(f"[tables] Candidates: {len(bordered_candidates)} bordered, "
+            log(f"[tables] A página tem {len(page.blocks)} blocos")
+            log(f"[tables] Candidatos: {len(bordered_candidates)} com borda, "
                 f"{len(ascii_candidates)} ASCII, {len(vertical_candidates)} vertical")
-            log(f"[tables] Final detections: {len(detections)}")
+            log(f"[tables] Detecções finais: {len(detections)}")
             for i, det in enumerate(detections):
                 log(f"[tables]   {i+1}. {det.detection_type}: {det.n_rows}x{det.n_cols}, "
                     f"score={det.score:.2f}, blocks={det.n_blocks}")
