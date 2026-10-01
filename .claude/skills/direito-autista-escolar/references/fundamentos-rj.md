@@ -94,9 +94,24 @@ A página define "cuidador" como o profissional de apoio escolar do art. 3º, XI
 - **Mediador e cuidador não são a mesma coisa.** A página trata do cuidador (alimentação, higiene, locomoção). O apoio em **comunicação e interação** também é função do profissional de apoio (Decreto 12.686/2025, art. 14, III; Portaria MEC 421/2026, art. 12, III). Se o estudante precisa disso, peça expressamente, para não receber só um cuidador.
 
 ### B. Professor Articulador Pedagógico da Educação Especial
-- **Resolução SEEDUC nº 5.664, de 19/07/2018** — estrutura básica das unidades escolares; o art. 4º, IV, prevê o **Professor Articulador Pedagógico** `[VERIFICAR texto no DOERJ]`;
-- **Resolução SEEDUC nº 6.222, de 09/01/2024** (republicada em 17/01/2024), **nº 6.245, de 02/04/2024** e **nº 6.264, de 22/05/2024** — escopo de atuação do Professor Articulador junto à Educação Especial. O texto localizado (cópias não oficiais e referência em documento SEI de 23/01/2025) indica: atuação em classes comuns com **até cinco estudantes**; participação na **elaboração do PAEE, do PEI e do Plano Individualizado de Transição (PIT)**; trabalho com direção, NAPES e professores regentes; adaptações e avaliação; conselhos de classe; orientação aos responsáveis. A **6.264/2024** parece ser a versão atual `[VERIFICAR no DOERJ: texto integral, vigência e qual resolução prevalece]`.
-- Uso: na rede estadual, pedir que o **PEI seja elaborado com o Professor Articulador e o NAPES**, citando a resolução só após conferência.
+- **Resolução SEEDUC nº 6.264, de 22/05/2024** [A, rede estadual] ✔ — **texto integral conferido no DOERJ de 28/05/2024, Parte I, Id 2568984** (01/10/2026). Revogou expressamente a **Resolução SEEDUC nº 6.245/2024** (art. 13), que por sua vez sucedeu a nº 6.222/2024. Não foi possível confirmar se houve alteração posterior, porque a busca por palavra do Diário Oficial estava fora do ar `[conferir alterações posteriores]`.
+  - **Art. 1º** — o Professor Articulador Pedagógico (Resolução SEEDUC nº 5.664/2018, art. 4º, IV) pode atuar especificamente na Educação Especial;
+  - **Art. 2º, I** — articulação pedagógica **em regência nas classes comuns**, com os professores regentes e **"com os profissionais de apoio pedagógico que exercem a mediação escolar"**, atendendo **no máximo cinco alunos** com deficiências, transtornos e/ou síndromes, conforme viabilidade analisada pela equipe pedagógica, sala de recursos e/ou **NAPES** (aqui chamado Núcleo de Apoio Pedagógico Especializado);
+  - **Art. 2º, II** — **elaborar o PAEE e/ou o PEI** (e o Plano Individualizado de Transição — PIT, para jovens e adultos) com coordenação, orientação e professores da turma regular;
+  - Art. 2º, III — atuação com direção, NAPES e regentes no planejamento, nas **adequações curriculares** e no **processo avaliativo**;
+  - Art. 2º, IV — auxiliar o estudante nas atividades, com **adaptação individualizada** quando necessário;
+  - Art. 2º, V a IX — conselhos de classe; ações de inclusão "em todo o espaço do ambiente escolar e em atividades de campo"; **orientação aos pais e responsáveis**; participação no PPP; formação continuada;
+  - Art. 4º — exige qualificação mínima de **120 horas** em cursos de Educação Especial;
+  - Art. 7º e **Anexo Único** — quantitativo estimado: **1 articulador por turno para até 5 alunos** que demandem AEE; até 2 para 5 a 10; e assim por diante, até 7 para 30 a 35 alunos por turno; revisão excepcional mediante avaliação do NAPES;
+  - Art. 8º — jornada de 30 horas semanais com os alunos.
+- **Uso estratégico (rede estadual):**
+  - a própria SEEDUC atribui ao Professor Articulador a **elaboração do PEI** (art. 2º, II) — se o estudante não tem PEI, pergunte por escrito quem é o articulador da escola e por que o plano não foi feito;
+  - o art. 2º, I, **reconhece a existência de "profissionais de apoio pedagógico que exercem a mediação escolar"** — útil contra a alegação de que a rede só oferece cuidador;
+  - o Anexo Único dá **parâmetro objetivo de quantidade** de articuladores por número de alunos atendidos — útil para pedir informação (Lei 12.527/2011) e demonstrar insuficiência;
+  - a norma vale só para a **rede estadual**.
+- **Resolução SEEDUC nº 5.664, de 19/07/2018** — estrutura básica das unidades escolares; seu art. 4º, IV, prevê o Professor Articulador Pedagógico (remissão confirmada no art. 1º da Resolução 6.264/2024) `[VERIFICAR texto próprio no DOERJ]`.
+
+**Ferramenta:** `scripts/doerj_baixar.sh AAAAMMDD pasta` baixa a Parte I do DOERJ de uma data e converte para .md (exige o domínio www.ioerj.com.br liberado na rede do ambiente). A busca por palavra do site estava fora do ar; para achar um ato, baixe as edições dos dias seguintes à data do ato e procure com `grep`.
 
 ### C. Avaliação
 - **Resolução SEEDUC nº 6.303, de 08/11/2024** — normas de avaliação do desempenho escolar; segundo fontes secundárias, prevê que a avaliação do estudante com deficiência considere o **PEI**, com orientação do núcleo especializado `[VERIFICAR texto integral e vigência no DOERJ antes de citar]`.
