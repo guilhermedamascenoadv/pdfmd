@@ -157,3 +157,5 @@ tmp/
 
 # Unused code snippets
 *_dead_ends/
+# Skills do Claude Code (versionadas, apesar da regra *.md acima)
+!.claude/skills/**/*.md
