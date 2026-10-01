@@ -95,17 +95,17 @@ Roteiro (prosa contínua na peça; os tópicos abaixo são só o esqueleto):
 
 ## 6. Roteiro do PEI a exigir (`/pei`)
 
-Itens mínimos a pedir que constem do PEI/PAEE (com base no Decreto 12.686/2025, arts. 11 e 12, e na Deliberação CEE/RJ 355/2016, art. 15):
+Itens mínimos a pedir que constem do PEI/PAEE (com base no Decreto 12.686/2025, arts. 11 e 12; na **Portaria MEC 421/2026, arts. 10 e 11**, que fixam o conteúdo mínimo obrigatório; e na Deliberação CEE/RJ 355/2016, art. 15). Se a rede usar documento único, ele deve cobrir os dois conteúdos mínimos (Portaria, art. 7º, § 2º):
 1. Identificação do estudante e da equipe responsável;
 2. Resultado do estudo de caso: barreiras, potencialidades e demandas de apoio (Decreto 12.686/2025, art. 11, § 1º);
 3. Objetivos individuais de aprendizagem por área, mensuráveis e com prazo;
 4. Adaptações curriculares (conteúdo, metodologia, recursos);
 5. Adaptações de avaliação (forma, tempo, critérios);
-6. Recursos de acessibilidade e tecnologia assistiva (CAA, dispositivo digital — art. 12, § 4º);
-7. Apoio humano: função, jornada e atividades do profissional de apoio (art. 14);
+6. Recursos de acessibilidade, com **avaliação expressa da necessidade de tecnologia assistiva e de comunicação aumentativa e alternativa** (Portaria MEC 421/2026, art. 10, II) e parecer sobre dispositivo digital (Decreto 12.686/2025, art. 12, § 4º);
+7. Apoio humano: **avaliação expressa da necessidade de profissional de apoio** (Portaria MEC 421/2026, arts. 10, III, e 14), com função, jornada e atividades (Decreto 12.686/2025, art. 14);
 8. Organização do AEE: frequência, turno, local, articulação com o professor da sala comum;
 9. Plano de manejo de crises e de regulação sensorial (quando aplicável);
 10. Articulação com saúde e assistência social (art. 11, § 4º);
-11. Participação da família: reuniões, ciência e assinatura (art. 11, § 3º);
-12. Datas de revisão (atualização contínua — art. 12) `[VERIFICAR periodicidade na Portaria MEC 421/2026]`;
+11. Participação da família: reuniões, ciência e assinatura (Decreto 12.686/2025, art. 11, § 3º) e **registro das devolutivas às famílias** (Portaria MEC 421/2026, art. 11, IV);
+12. Datas de revisão: atualização contínua (Decreto 12.686/2025, art. 12) e **revisão anual obrigatória** (Portaria MEC 421/2026, art. 7º, § 3º);
 13. Tratamento de dados sensíveis conforme a LGPD (art. 12, § 5º).

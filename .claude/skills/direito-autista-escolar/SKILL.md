@@ -64,7 +64,7 @@ Rede, etapa e município definem a régua normativa.
 
 ### Etapa 3 — Reconstruir o caso pedagógico
 Registre: barreiras (atitudinais, pedagógicas, arquitetônicas, comunicacionais — art. 3º, IV, da Lei 13.146/2015); participação real do estudante (frequência, permanência em jornada integral, aprendizagem, socialização); estratégias já tentadas; manifestações da família; registros da escola.
-**O diagnóstico explica necessidades, mas não é resposta pronta**: a resposta escolar deve ser individualizada e fundada no caso concreto. O laudo não é condição de matrícula, de AEE nem de profissional de apoio (Decreto 12.686/2025, arts. 11, § 7º, e 14, § 2º; no RJ, Deliberação CEE/RJ 355/2016, art. 5º, §§ 1º e 2º).
+**O diagnóstico explica necessidades, mas não é resposta pronta**: a resposta escolar deve ser individualizada e fundada no caso concreto. O laudo não é condição de matrícula, de escolarização, de AEE nem de profissional de apoio (Portaria MEC 421/2026, art. 7º, § 4º; Decreto 12.686/2025, arts. 11, § 7º, e 14, § 2º; no RJ, Deliberação CEE/RJ 355/2016, art. 5º, §§ 1º e 2º).
 
 ### Etapa 4 — Testar a resposta institucional (checklist mínimo)
 Para cada item, marque `ATENDIDO` / `NÃO ATENDIDO` / `[A COMPROVAR]`:
@@ -78,7 +78,7 @@ Para cada item, marque `ATENDIDO` / `NÃO ATENDIDO` / `[A COMPROVAR]`:
 - [ ] Comunicação alternativa e tecnologia assistiva (CAA, pranchas, aplicativos) — Lei 13.146/2015, art. 28, XII; Decreto 12.686/2025, art. 12, § 4º (parecer pedagógico autorizando dispositivo digital portátil como tecnologia assistiva) e art. 14, III e IV; Deliberação CEE/RJ 355/2016, art. 13, § 2º;
 - [ ] **Acompanhante especializado** em classe comum, comprovada a necessidade (Lei 12.764/2012, art. 3º, parágrafo único; Decreto 8.368/2014, art. 4º, § 2º) e/ou **profissional de apoio escolar** (Lei 13.146/2015, arts. 3º, XIII, e 28, XVII; Decreto 12.686/2025, arts. 14 e 15): oferta definida pelo estudo de caso, **independente de laudo** (art. 14, § 2º), com formação mínima de nível médio + 180 horas de formação continuada (art. 15, redação do Decreto 12.773/2025), atuando em todas as atividades escolares (art. 14, § 1º);
 - [ ] Na escola privada: **nenhuma cobrança adicional** pelo apoio ou pelas adaptações (Lei 13.146/2015, art. 28, § 1º; ADI 5357; Lei Estadual RJ 7.262/2016);
-- [ ] Atualização contínua do PAEE/PEI (Decreto 12.686/2025, art. 12) — periodicidade mínima conforme regulamentação do MEC (Portaria MEC nº 421/2026, alterada pela Portaria MEC nº 550/2026) `[VERIFICAR texto da portaria]`;
+- [ ] Conteúdo mínimo do PAEE (Portaria MEC 421/2026, art. 10) e do PEI (art. 11), incluindo **registro das devolutivas às famílias** (art. 11, IV); **revisão anual obrigatória** (art. 7º, § 3º), sem prejuízo da atualização contínua (Decreto 12.686/2025, art. 12);
 - [ ] Participação da família nas decisões pedagógicas (Lei 13.146/2015, art. 28, VIII; Deliberação CEE/RJ 355/2016, art. 15, § 1º, I, e § 2º, III);
 - [ ] Inclusão em recreio, educação física, passeios, festas e eventos (Lei 13.146/2015, art. 28, XV);
 - [ ] Medida disciplinar: proporcionalidade, contraditório, consideração da condição do estudante e das adaptações omitidas; suspensão ou transferência compulsória que funcione como exclusão = discriminação (Lei 13.146/2015, art. 4º, § 1º);

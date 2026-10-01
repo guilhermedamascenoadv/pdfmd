@@ -95,7 +95,32 @@ Publicado no DOU de 21/10/2025; alterações de 08/12/2025. **Revogou o Decreto 
 - **Art. 14** — profissional de apoio escolar atua conforme PAEE e PEI: I locomoção, acesso e participação em todos os espaços e atividades; II higiene e alimentação; **III interação social e comunicação**; IV uso de tecnologias e recursos do AEE; **§ 1º atua em todas as atividades escolares**; **§ 2º oferta avaliada pelo estudo de caso e independente de laudo**;
 - **Art. 15** — profissional de apoio: no mínimo nível médio + formação continuada de **180 horas**.
 
-Regulamentação: **Portaria MEC nº 421, de 15/05/2026** (DOU 18/05/2026), alterada pela **Portaria MEC nº 550, de 18/06/2026** `[VERIFICAR conteúdo — prazos de implantação, periodicidade de revisão do PEI, critérios]`.
+### 7.1 Portaria MEC nº 421, de 15/05/2026 — regulamenta o Decreto 12.686/2025 [A] ✔
+
+Publicada no DOU de 18/05/2026, edição 91, seção 1, p. 45 (texto conferido no portal da Imprensa Nacional). Alterada **apenas no art. 29** (designação dos Coordenadores de Intersetorialidade) pela Portaria MEC nº 550, de 18/06/2026 (DOU de 23/06/2026). Vigência desde a publicação (art. 39).
+
+**Dispositivos úteis no contencioso escolar:**
+
+- **Art. 1º, parágrafo único** — o padrão de qualidade se expressa pelo **conjunto de apoios** necessários ao acesso, à permanência, à participação e à aprendizagem;
+- Art. 4º — AEE em todos os níveis, etapas e modalidades;
+- **Art. 5º** — AEE de **0 a 3 anos** por meio de serviços de **atenção precoce**, conforme a Lei 14.880/2024 (§ 2º: diretrizes a serem editadas pela SECADI `[VERIFICAR ato da SECADI]`) — relevante para creche;
+- **Art. 6º** — AEE **preferencialmente na própria escola** em que o estudante está matriculado;
+- **Art. 7º** — oferta do AEE mediante: I recursos de acessibilidade; II formação continuada; **III avaliação da necessidade de profissional de apoio escolar**; **IV PAEE e PEI obrigatórios, individualizados, com atualização contínua, a partir do estudo de caso**; V atendimentos na Sala de Recursos Multifuncional;
+  - § 2º — a rede pode adotar **documento único** com as finalidades do PAEE e do PEI, desde que cumpra os critérios mínimos;
+  - **§ 3º — PAEE e PEI devem ser revisados ANUALMENTE**;
+  - **§ 4º — matrícula, escolarização e AEE não podem ser condicionados a diagnóstico, laudo, relatório ou qualquer documento de profissional de saúde**;
+- Art. 9º — AEE para estudante impossibilitado de frequentar por tratamento de saúde (LDB, arts. 4º-A e 81-A);
+- **Art. 10 — conteúdo mínimo do PAEE** (registro do estudo de caso): I materiais e recursos para eliminar barreiras; **II avaliação da necessidade de tecnologia assistiva e de comunicação aumentativa e alternativa**; **III avaliação da necessidade de profissional de apoio escolar**; IV demandas de formação e acionamento da rede de proteção;
+- **Art. 11 — conteúdo mínimo do PEI** (plano de acessibilização curricular): I atividades no AEE e articulação com o professor regente; **II medidas de acessibilidade curricular, didático-pedagógica e avaliativa**; III estratégias de acompanhamento e monitoramento; **IV registro das devolutivas às famílias**;
+- **Art. 12** — atuação do profissional de apoio: locomoção; higiene e alimentação; **interação social e comunicação**; uso de tecnologia assistiva e recursos do AEE;
+- **Art. 13** — o profissional de apoio subordina-se ao planejamento pedagógico; **parágrafo único: suas atribuições não se confundem com as de caráter docente** (argumento contra a escola que coloca o profissional de apoio para "dar aula" ao estudante em separado, e também limite do pedido);
+- **Art. 14** — a necessidade do profissional de apoio é **definida no estudo de caso** (locomoção, higiene, alimentação, interação, comunicação e tecnologia assistiva);
+- Art. 32, VIII — Agentes Intersetoriais monitoram violações do direito à educação especial inclusiva e acionam o Sistema de Garantia de Direitos; parágrafo único: princípio da **não medicalização da educação** e da **centralidade da escola comum**.
+
+**⚠ Prazos de transição (a escola vai alegá-los — saiba responder):**
+
+- **Art. 37** — redes que **já possuam** documentos individualizados análogos ao PAEE/PEI têm **até 3 anos** (até 18/05/2029) para **adequá-los** à Portaria. Isso **não** dispensa a existência do plano: a obrigação de ter PAEE/PEI vem do Decreto 12.686/2025 (art. 12) e, no RJ, da Deliberação CEE/RJ 355/2016 (art. 15). Quem não tem plano algum não se beneficia da transição;
+- **Art. 38** — as exigências de **formação continuada** (360 h para o professor do AEE e 180 h para o profissional de apoio — Decreto 12.686/2025, arts. 13, II, e 15, II) devem ser cumpridas em **até 4 anos** (até 18/05/2030); profissionais já em exercício na data de publicação do Decreto 12.773/2025 têm **6 anos**. Portanto, **não** sustente hoje que o profissional de apoio "não tem as 180 horas" como descumprimento atual — o argumento correto é a **falta de capacitação adequada à função** (Lei 13.146/2015, art. 28, X e XI; no RJ, Deliberação 355/2016, art. 20). A transição de formação **não** autoriza deixar de fornecer o profissional.
 
 > Uso estratégico: o Decreto 12.773/2025 também incluiu diretrizes sobre apoio a instituições especializadas (art. 3º, X; art. 4º-A). Em disputa sobre classe ou escola especial, lembre que o art. 1º, § 3º, assegura o **direito** à classe comum e que, no RJ, classe/escola especial é **excepcional** e decidida com a família (Deliberação CEE/RJ 355/2016, arts. 7º e 8º).
 
