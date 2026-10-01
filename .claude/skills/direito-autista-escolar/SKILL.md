@@ -104,7 +104,7 @@ Marcadores obrigatórios:
 
 ### Escada de providências (sugira na ordem, salvo urgência)
 1. Pedido formal e protocolado à escola (sempre por escrito, com prazo);
-2. Rede pública estadual RJ: escola → Diretoria/Superintendência Regional → SEEDUC/RJ; instância normativa e de consulta: CEE/RJ (Deliberação 355/2016, art. 24). Rede municipal: escola → Secretaria Municipal de Educação `[VERIFICAR NORMA MUNICIPAL]`. Escola privada: notificação extrajudicial à mantenedora + reclamação no Procon;
+2. Rede pública estadual RJ: pedido na secretaria da escola → processo eletrônico com avaliação do **NAPES** → Coordenadoria/Diretoria Regional → COOPPEE → empresa contratada (procedimento oficial da SEEDUC — ver `fundamentos-rj.md`, item A; guarde o número do processo e cada despacho, pois são a prova da inicial); instância normativa e de consulta: CEE/RJ (Deliberação 355/2016, art. 24). Rede municipal: escola → Secretaria Municipal de Educação `[VERIFICAR NORMA MUNICIPAL]`. Escola privada: notificação extrajudicial à mantenedora + reclamação no Procon;
 3. Representação ao Ministério Público (Promotoria de Educação/Infância) e/ou Defensoria Pública; Conselho Tutelar quando houver violação de direito da criança (ECA, arts. 56 e 136);
 4. Ação de obrigação de fazer com tutela de urgência (CPC, arts. 300, 497 e 537), cumulada, se for o caso, com reparação de danos materiais e morais;
 5. Recusa de matrícula: comunicar à autoridade para aplicação da multa do art. 7º da Lei 12.764/2012 e, se dolosa, notícia-crime pelo art. 8º, I, da Lei 7.853/1989.

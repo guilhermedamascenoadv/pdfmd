@@ -73,9 +73,48 @@ Homologada pela Portaria CEE nº 3.510, de 23/06/2016; publicada em 01/07/2016. 
 
 - Art. 307 (incisos I, IV, V e VII citados na Deliberação 355/2016) `[VERIFICAR redação dos incisos antes de transcrever]`.
 
-## Atos da SEEDUC/RJ
+## Atos e práticas da SEEDUC/RJ (rede estadual) — levantamento de 01/10/2026
 
-- Resoluções, portarias, circulares e regimento da rede estadual: **verificar número, data e vigência** no Diário Oficial do Estado do RJ antes de citar. Sem confirmação → `[VERIFICAR ATO SEEDUC]`. Inventário em construção — **nunca presumir conteúdo**.
+Regra geral: antes de citar ato da SEEDUC em peça, conferir número, data e vigência no Diário Oficial do Estado (IOERJ). Ato não listado abaixo → `[VERIFICAR ATO SEEDUC]`. **Nunca presumir conteúdo.** Os atos da SEEDUC valem só para a **rede estadual** — não para escola privada nem para rede municipal.
+
+### A. Procedimento oficial para pedir cuidador ou intérprete de Libras ✔
+Fonte: página oficial "Cuidador ou Intérprete de Libras" (seeduc.rj.gov.br/cuidador-ou-intérprete-de-libras; espelho de rj.gov.br/seeduc/node/117), conferida em 01/10/2026.
+
+1. O responsável vai à **secretaria da escola** com laudo(s) médico(s) com **CID-10 ou CID-11** e pede o profissional;
+2. A escola **autua processo eletrônico** (ofício + laudos + ficha do Conexão Educação), pede **avaliação pedagógica do NAPES** (Núcleo de Apoio Educacional Especializado) e envia à Coordenadoria de Ensino e à Diretoria Regional Pedagógica;
+3. O NAPES avalia a necessidade (profissional de apoio, cuidador, sala de recursos, adaptação curricular etc.); a Coordenadoria ratifica;
+4. A **COOPPEE** (Coordenadoria de Programas e Projetos para Educação Especial) e a Superintendência de Projetos para Educação Especial analisam e consolidam os deferimentos;
+5. A **SUPCON** (Superintendência de Gestão de Contratos e Convênios) emite ordem de serviço à **empresa terceirizada**, que contrata e envia o profissional à escola.
+
+A página define "cuidador" como o profissional de apoio escolar do art. 3º, XIII, da Lei 13.146/2015 e traz planilha de salas de recursos ativas.
+
+**Uso estratégico:**
+- **Siga o procedimento e documente.** Peça cópia do número do processo SEI, da avaliação do NAPES e de cada despacho. O processo administrativo gera a prova que faltou no precedente desfavorável do TJRJ (ver item D);
+- **A exigência de laudo com CID como condição é contestável.** Na rede estadual a exigência contraria: Portaria MEC 421/2026, art. 7º, § 4º; Decreto 12.686/2025, arts. 11, § 7º, e 14, § 2º; Deliberação CEE/RJ 355/2016, art. 5º, §§ 1º e 2º. Na prática: se a família **tem** laudo, entregue-o (ajuda); se **não tem**, exija o estudo de caso pedagógico e registre a recusa por escrito;
+- **Mediador e cuidador não são a mesma coisa.** A página trata do cuidador (alimentação, higiene, locomoção). O apoio em **comunicação e interação** também é função do profissional de apoio (Decreto 12.686/2025, art. 14, III; Portaria MEC 421/2026, art. 12, III). Se o estudante precisa disso, peça expressamente, para não receber só um cuidador.
+
+### B. Professor Articulador Pedagógico da Educação Especial
+- **Resolução SEEDUC nº 5.664, de 19/07/2018** — estrutura básica das unidades escolares; o art. 4º, IV, prevê o **Professor Articulador Pedagógico** `[VERIFICAR texto no DOERJ]`;
+- **Resolução SEEDUC nº 6.222, de 09/01/2024** (republicada em 17/01/2024), **nº 6.245, de 02/04/2024** e **nº 6.264, de 22/05/2024** — escopo de atuação do Professor Articulador junto à Educação Especial. O texto localizado (cópias não oficiais e referência em documento SEI de 23/01/2025) indica: atuação em classes comuns com **até cinco estudantes**; participação na **elaboração do PAEE, do PEI e do Plano Individualizado de Transição (PIT)**; trabalho com direção, NAPES e professores regentes; adaptações e avaliação; conselhos de classe; orientação aos responsáveis. A **6.264/2024** parece ser a versão atual `[VERIFICAR no DOERJ: texto integral, vigência e qual resolução prevalece]`.
+- Uso: na rede estadual, pedir que o **PEI seja elaborado com o Professor Articulador e o NAPES**, citando a resolução só após conferência.
+
+### C. Avaliação
+- **Resolução SEEDUC nº 6.303, de 08/11/2024** — normas de avaliação do desempenho escolar; segundo fontes secundárias, prevê que a avaliação do estudante com deficiência considere o **PEI**, com orientação do núcleo especializado `[VERIFICAR texto integral e vigência no DOERJ antes de citar]`.
+
+### D. Outras referências
+- **Circular Interna SEEDUC/COOGIN nº 07/2022** — citada na página oficial do serviço como protocolo para crises de agressividade; segundo a página, **o profissional de apoio não é responsável pela contenção**. Conteúdo integral não localizado `[VERIFICAR]`. Útil em disputas disciplinares: o manejo de crise é responsabilidade da escola, por protocolo, e deve estar no PEI;
+- Contratação temporária de professores, incluindo a área de **Educação Especial**, para 2026–2027: Decreto Estadual nº 50.067/2025 e Lei Estadual nº 10.363/2024 (página oficial da SEEDUC) — útil para contestar a alegação de "falta de professor de AEE";
+- **Não localizado:** ato da SEEDUC que fixe limite geral de alunos com deficiência por turma ou regra própria de matrícula prioritária. Não afirme que existe.
+
+### ⚠ Armadilha
+- **PL ALERJ nº 3.223/2020** (obriga salas de recursos multifuncionais nas escolas da SEEDUC e da FAETEC) **NÃO é lei**: na consulta ao sistema da ALERJ, ainda estava na Comissão de Constituição e Justiça, com baixa em diligência à SEEDUC em 2025. Não cite como norma.
+
+## Lei Estadual RJ nº 9.425, de 29/09/2021 [A] ✔
+Fonte: reproduzida na página oficial de legislação da SEEDUC (seeduc.rj.gov.br/mais/legislação), conferida em 01/10/2026.
+- **Art. 1º** — o laudo médico pericial que ateste deficiência física, mental e/ou intelectual **de caráter irreversível** tem **validade por tempo indeterminado**; parágrafo único: vale para todos os serviços públicos e benefícios que exijam comprovação da deficiência;
+- **Art. 2º** — o laudo deve trazer nome completo, **CID-10 e CIF**, carimbo, número de registro no conselho profissional e **a condição de irreversibilidade**;
+- **Art. 3º** — requisições médicas para tratamento e acompanhamento dessas deficiências também têm validade indeterminada.
+- **Uso:** responde à alegação de "laudo desatualizado" (a mesma usada pelo Estado no precedente do TJRJ). **Atenção:** só vale se o laudo declarar expressamente a irreversibilidade e trouxer CID e CIF. Oriente a família a pedir laudo nesse formato. Isso não substitui a prova **pedagógica** da necessidade do apoio.
 
 ## Pareceres do CEE/RJ [B]
 
@@ -84,7 +123,7 @@ Homologada pela Portaria CEE nº 3.510, de 23/06/2016; publicada em 01/07/2016. 
 
 ## Canal administrativo
 
-- **Rede estadual**: escola (direção) → Diretoria/Superintendência Regional Pedagógica `[VERIFICAR nomenclatura atual]` → SEEDUC/RJ (setor de educação especial) → CEE/RJ (instância normativa e de consulta, art. 24 da Deliberação 355/2016).
+- **Rede estadual**: pedido protocolado na secretaria da escola → processo eletrônico com avaliação do **NAPES** → Coordenadoria de Ensino / Diretoria Regional Pedagógica → **COOPPEE** e Superintendência de Projetos para Educação Especial → SUPCON (contrato com a empresa terceirizada) — ver item A acima; instância normativa e de consulta: CEE/RJ (art. 24 da Deliberação 355/2016). Ouvidoria da SEEDUC como canal adicional `[VERIFICAR contato]`.
 - **Escola privada**: direção/mantenedora → notificação extrajudicial → Procon-RJ → supervisão do sistema estadual (inspeção escolar) `[VERIFICAR órgão de supervisão]` → MPRJ (Promotorias de Tutela Coletiva de Proteção à Educação / Infância e Juventude) → Judiciário.
 - **Ministério Público do RJ**: o MPRJ (CAO Educação) participou da construção da Deliberação 355/2016 — argumento institucional relevante em representação.
 - **Defensoria Pública do RJ** e **Conselho Tutelar** do Município.

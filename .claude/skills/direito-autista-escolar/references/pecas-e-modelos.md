@@ -74,7 +74,7 @@ Roteiro (prosa contínua na peça; os tópicos abaixo são só o esqueleto):
    - Escola privada: CDC, arts. 14 e 20; STF, ADI 5357;
    - **Matriz necessidade → medida → norma** (ver `camada-cientifica.md`, item 8), transformada em prosa;
 7. **Tutela de urgência (CPC, art. 300)**:
-   - probabilidade do direito: norma expressa + prova documental (laudo, relatórios, pedidos ignorados);
+   - probabilidade do direito: norma expressa + prova documental (laudo **recente** que justifique o apoio específico, relatório pedagógico ou avaliação do NAPES, pedidos ignorados) — ver o precedente desfavorável do TJRJ no AI 0036495-67.2025.8.19.0000 em `fundamentos-federais.md`, item 15, e evitar as falhas de prova apontadas ali;
    - perigo de dano: perda de dias letivos, regressão, janela de desenvolvimento, exclusão social `[A COMPROVAR com relatórios]`;
    - reversibilidade: a medida não é irreversível (o apoio pode ser revisto a qualquer tempo);
    - multa diária (CPC, art. 537) e medidas de apoio (art. 536, § 1º);
