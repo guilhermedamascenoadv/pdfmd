@@ -36,10 +36,10 @@ Estrutura:
    - **STF, ADI 5357** (Plenário, Rel. Min. Edson Fachin, j. 09/06/2016, DJ 11/11/2016);
    - Lei 7.853/1989, art. 8º, I (crime de recusar, cobrar valores adicionais, suspender ou cancelar inscrição);
    - CDC, arts. 6º, 14, 20 e 39, V;
-   - No RJ: Deliberação CEE/RJ 355/2016, arts. 9º, IV, 15 e 22; Lei Estadual 7.262/2016;
+   - No RJ: Deliberação CEE/RJ 355/2016, arts. 9º, IV, 15 e 22; Lei Estadual 7.262/2016, arts. 1º a 4º (vedação de taxa adicional, devolução em dobro, proibição de recusar matrícula e multa do CDC);
 4. Exigências com prazo;
 5. Advertência das medidas cabíveis (Procon, MP, ação de obrigação de fazer com tutela de urgência, reparação de danos, comunicação à autoridade competente);
-6. Pedido de devolução de valores cobrados indevidamente (CDC, art. 42, parágrafo único — **devolução em dobro** exige cobrança indevida efetivamente paga; avaliar a boa-fé `[VERIFICAR entendimento atual do STJ sobre o requisito da má-fé]`).
+6. Pedido de devolução **em dobro** dos valores cobrados indevidamente, com correção monetária e juros: no RJ, fundamento principal na **Lei Estadual 7.262/2016, art. 2º** (previsão legal direta, sem a condição do engano justificável); fora do RJ, CDC, art. 42, parágrafo único `[VERIFICAR entendimento atual do STJ sobre o requisito da má-fé]`. Em ambos os casos, exige pagamento efetivo do valor indevido `[A COMPROVAR com boletos e comprovantes]`.
 
 ## 3. Requerimento à SEEDUC/RJ ou à Secretaria Municipal (`/requerimento`)
 

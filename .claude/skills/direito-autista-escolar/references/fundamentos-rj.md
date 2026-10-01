@@ -49,7 +49,25 @@ Homologada pela Portaria CEE nº 3.510, de 23/06/2016; publicada em 01/07/2016. 
 
 ## Lei Estadual RJ nº 7.262, de 15/04/2016 [A]
 
-- Proíbe a cobrança de taxa adicional a alunos com deficiência (referida no preâmbulo e no art. 9º, IV, da Deliberação 355/2016) ✔ quanto à existência e ao objeto; `[VERIFICAR texto integral, sanções e órgão fiscalizador antes de transcrever]`.
+✔ Texto integral conferido em 01/10/2026 (5 artigos). Publicada no Diário Oficial do Executivo do RJ em **18/04/2016** (confirmado em notícia oficial da ALERJ); autoria do Deputado Thiago Pampolha; sancionada pelo Governador em exercício Francisco Dornelles. Não foi localizada alteração posterior `[conferir a versão compilada no sistema de leis da ALERJ antes de transcrever em peça]`.
+
+> **Art. 1º** Fica proibida, no âmbito do Estado do Rio de Janeiro, a cobrança, por parte dos estabelecimentos de ensino, de taxa adicional que não seja comum a todos os alunos, para aluno com deficiência.
+>
+> **Art. 2º** O aluno cobrado em quantia indevida terá direito à repetição em dobro do indébito, acrescido de correção monetária e juros legais.
+>
+> **Art. 3º** Nenhuma instituição de ensino poderá se recusar a matricular o aluno com deficiência, em virtude da ausência de pagamento da taxa adicional descrita no caput desta Lei.
+>
+> **Art. 4º** O descumprimento desta Lei acarretará ao estabelecimento de ensino multa prevista pelo Código de Defesa do Consumidor.
+>
+> **Art. 5º** Esta Lei entra em vigor na data de sua publicação.
+
+(O texto legal usa "caput" no art. 3º; ao parafrasear na peça, diga "no art. 1º".)
+
+**Uso estratégico:**
+- **Art. 1º — alcance amplo**: proíbe qualquer "taxa adicional que não seja comum a todos os alunos". Alcança a cobrança disfarçada (taxa de mediador, de acompanhante, de "inclusão", de material adaptado, mensalidade diferenciada). Vale para **qualquer estabelecimento de ensino** no Estado, não só educação básica. O estudante com TEA está protegido porque é pessoa com deficiência (Lei 12.764/2012, art. 1º, § 2º);
+- **Art. 2º — devolução em dobro prevista diretamente em lei estadual**, sem a condição do art. 42, parágrafo único, do CDC (que exclui o "engano justificável"). Use o art. 2º como fundamento principal da devolução em dobro e o CDC como reforço. Sobre a possível alegação de que a lei estadual não poderia tratar de direito civil (CF, art. 22, I), responda com a competência concorrente em consumo e educação (CF, art. 24, V e IX) e com a vedação federal idêntica (Lei 13.146/2015, art. 28, § 1º; ADI 5357) `[VERIFICAR se há controle de constitucionalidade da Lei 7.262/2016]`;
+- **Art. 3º** — recusar matrícula por falta de pagamento da taxa é ilícito autônomo; somar com o art. 7º da Lei 12.764/2012 (multa ao gestor) e o art. 8º, I, da Lei 7.853/1989 (crime);
+- **Art. 4º** — multa administrativa do CDC (arts. 56, I, e 57) → **reclamação no Procon-RJ** é a via natural de fiscalização.
 
 ## Constituição do Estado do RJ [A]
 
