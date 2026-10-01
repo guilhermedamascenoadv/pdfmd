@@ -109,12 +109,26 @@ A página define "cuidador" como o profissional de apoio escolar do art. 3º, XI
   - o art. 2º, I, **reconhece a existência de "profissionais de apoio pedagógico que exercem a mediação escolar"** — útil contra a alegação de que a rede só oferece cuidador;
   - o Anexo Único dá **parâmetro objetivo de quantidade** de articuladores por número de alunos atendidos — útil para pedir informação (Lei 12.527/2011) e demonstrar insuficiência;
   - a norma vale só para a **rede estadual**.
-- **Resolução SEEDUC nº 5.664, de 19/07/2018** — estrutura básica das unidades escolares; seu art. 4º, IV, prevê o Professor Articulador Pedagógico (remissão confirmada no art. 1º da Resolução 6.264/2024) `[VERIFICAR texto próprio no DOERJ]`.
+- **Resolução SEEDUC nº 5.664, de 19/07/2018** — atualiza a estrutura básica das unidades escolares da rede estadual. **Existência, número, data e o conteúdo do art. 4º, IV (previsão do Professor Articulador Pedagógico) estão confirmados por remissão oficial** no art. 1º da Resolução 6.264/2024 (DOERJ de 28/05/2024). O texto próprio **não foi localizado** nas edições do DOERJ de 19/07 a 10/08/2018: parte dos PDFs daquele ano tem fontes com codificação quebrada e a busca por palavra do site está fora do ar. Cite só o que a 6.264 reproduz `[VERIFICAR texto integral se precisar de outro dispositivo]`.
 
-**Ferramenta:** `scripts/doerj_baixar.sh AAAAMMDD pasta` baixa a Parte I do DOERJ de uma data e converte para .md (exige o domínio www.ioerj.com.br liberado na rede do ambiente). A busca por palavra do site estava fora do ar; para achar um ato, baixe as edições dos dias seguintes à data do ato e procure com `grep`.
+**Ferramenta:** `scripts/doerj_baixar.sh AAAAMMDD pasta` baixa a Parte I do DOERJ de uma data e converte para .md (exige o domínio www.ioerj.com.br liberado na rede do ambiente). A busca por palavra do site estava fora do ar; para achar um ato, baixe as edições dos dias seguintes à data do ato e procure com `grep` (a publicação pode atrasar até uma semana: a 6.303, de 08/11/2024, saiu em 14/11/2024). **PDFs de 2018 e anteriores** podem ter texto embaralhado por fonte quebrada (ex.: "%JSFUPS" = "Diretor", código do caractere deslocado em −31); nesse caso, refaça com OCR (`pdfmd ARQ.pdf --ocr tesseract --lang por`) ou leia a página do PDF.
 
-### C. Avaliação
-- **Resolução SEEDUC nº 6.303, de 08/11/2024** — normas de avaliação do desempenho escolar; segundo fontes secundárias, prevê que a avaliação do estudante com deficiência considere o **PEI**, com orientação do núcleo especializado `[VERIFICAR texto integral e vigência no DOERJ antes de citar]`.
+### C. Avaliação e PEI na rede estadual
+- **Resolução SEEDUC nº 6.303, de 08/11/2024** [A, rede estadual] ✔ — **texto integral conferido no DOERJ de 14/11/2024, Parte I, Id 2608132** (01/10/2026). Normas de avaliação do desempenho escolar, adequação e adaptação curriculares, plano especial de estudo, progressão parcial e conselho de classe nas escolas da SEEDUC. Revogou a Resolução SEE nº 2.242/1999 e a Portaria SEEDUC/SUGEN nº 419/2013 (art. 85). Cita como fundamentos a Resolução CNE/CEB nº 2/2001 e a Lei 13.146/2015.
+  - **Art. 14** — a avaliação do estudante com deficiência "dar-se-á de acordo com o estabelecido no **Plano Educacional Individualizado - PEI**, elaborado pela unidade escolar com orientação do NAPES";
+  - **Art. 23** — para o estudante com deficiência, o plano especial de estudo se formaliza pelo **PEI, elaborado pelos docentes**, com apoio da equipe técnico-pedagógica e do NAPES;
+    - **§ 1º** — antes do PEI, a equipe, orientada pelo NAPES, **deve fazer avaliações diagnósticas** (desenvolvimento psicomotor, social, de linguagem e reforçadores positivos);
+    - **§ 2º** — o PEI **deve ser apresentado aos responsáveis legais**, com orientação à família;
+    - **§ 3º** — se o estudante frequenta Sala de Recursos, o PEI deve ser compartilhado com o professor da sala;
+  - **Art. 24** — o plano fica na **pasta individual do estudante**, com **relatórios trimestrais/bimestrais** dos resultados → documentos que a família pode pedir e que servem de prova;
+  - **Art. 25, § 4º** — para o estudante com deficiência "com laudo médico **e/ou** previamente avaliados pelo NAPES", a adequação curricular se faz pelo PEI. O "e/ou" permite exigir o PEI **sem laudo**, com base na avaliação do NAPES (em linha com a Portaria MEC 421/2026, art. 7º, § 4º);
+  - **Art. 32, § 1º** — a recomposição de aprendizagem segue o PEI, acompanhada pelo NAPES;
+  - **Art. 39, § 3º** — em progressão parcial, o plano de estudo do estudante com deficiência se faz por PEI;
+  - Art. 61 — atendimento domiciliar ou hospitalar por processo SEI, com plano especial de estudo, quando houver impedimento de frequência por tratamento de saúde.
+- **Uso estratégico (rede estadual):**
+  - nota baixa ou reprovação de estudante com deficiência **sem PEI** viola os arts. 14 e 23 → pedir revisão do resultado e do conselho de classe com base nesses artigos;
+  - pedir por escrito **cópia do PEI, das avaliações diagnósticas e dos relatórios trimestrais/bimestrais** (arts. 23, §§ 1º e 2º, e 24); a recusa ou a inexistência é prova de omissão;
+  - a resolução usa nomes diferentes para o NAPES (Núcleo de Atendimento Especializado, de Apoio Psicopedagógico); é o mesmo núcleo de educação especial da rede.
 
 ### D. Outras referências
 - **Circular Interna SEEDUC/COOGIN nº 07/2022** — citada na página oficial do serviço como protocolo para crises de agressividade; segundo a página, **o profissional de apoio não é responsável pela contenção**. Conteúdo integral não localizado `[VERIFICAR]`. Útil em disputas disciplinares: o manejo de crise é responsabilidade da escola, por protocolo, e deve estar no PEI;
